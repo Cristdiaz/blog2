@@ -1,0 +1,49 @@
+#REQUERIMIENTOS:
+
+Convenciones para la evaluación: 
+● El formulario debe tener id="create_posts".
+
+● Puedes usar HTML para validar la presencia de atributos.
+
+● Aún no vemos cómo subir contenido, así que la imagen de los posts serán
+referenciadas por una url.
+
+● El modelo debe llamarse post y la tabla de la base de datos posts.
+
+● El título debe llamarse title, el contenido content, la imagen image_url, en la
+fecha se utilizará created_at (este último se crea por defecto al momento de
+crear el modelo).
+
+● Se deben respetar las URLs especificadas para lograr la evaluación.
+
+● Para realizar la evaluación se ingresarán 3 posts con contenido de prueba y se
+revisará la existencia de estos y el orden mostrado en la página principal.
+
+● Solo debe ser subido el link al sitio en producción para la evaluación.
+
+● Subir a Heroku y compartir el link.
+
+
+
+#Ingresamos nuevos post en consola con:
+rails c
+ingresamos los datos + ENTER
+cerramos con exit
+
+Luego levantamos el servidor de nuevo con:
+rails s
+y luego cerramos con ctrl + C
+
+
+EJEMPLO DE POST:
+
+post3 = Post.create(
+    title: "Dia-4 Final",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Illum nisi quam atque neque excepturi, aliquam magnam possimus ut laudantim dolorum libero, 
+    ipsa animi explicabo tempora doloremque non nesciunt incidunt vero mollitia.",
+    image_url: ""
+    )
+
+   #Me faltó hacer que los post ingresados en new aparezcan en la página principal
+
